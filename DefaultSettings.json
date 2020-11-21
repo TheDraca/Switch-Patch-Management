@@ -1,0 +1,12 @@
+{
+  "General": {
+    "Title": "Patch Management Database Version 0.1.0",
+    "MainXWindowSize": 350,
+    "MainYWindowSize": 100,
+    "AddPatchXWindowSize": 335,
+    "AddPatchYWindowSize": 350
+  },
+  "Database": {
+    "DatabaseLocation": "Database.db"
+  }
+}
