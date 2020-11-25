@@ -162,6 +162,14 @@ def AddPatch(Tech,Switch,PannelPort,SwitchUnit,SwitchPort,PatchType,Date,Notes):
     database.commit()
     database.close()
 
+
+def AddNewTech(Name):
+    database = sqlite3.connect(ReadSettings.GetSetting("Database","DatabaseLocation"))
+    cursor = database.cursor()
+    cursor.execute("""INSERT INTO TECHS (Tech) VALUES ("{0}") """.format(Name))
+    database.commit()
+    database.close()
+
 def SearchPatch(SearchTerms):
     database = sqlite3.connect(ReadSettings.GetSetting("Database","DatabaseLocation"))
     cursor = database.cursor()
